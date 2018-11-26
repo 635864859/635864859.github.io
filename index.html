@@ -1,12 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Git and Github</title>
+	<meta charset="UTF-8">
+	<title>苏宁易购-模拟网页杨海伟制作</title>
+	<link rel="stylesheet" href="css/demo.css"><!--用link标签引入外部书写好的CSS样式表-->
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/content.css">
+	<link rel="stylesheet" href="css/center-ct-one.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<!--引入jQuery，jQuery是js的一种框架，用于将js的类进行封装，-->
+	<script type="text/javascript" src="layer/layer.js"></script>
+	<!--引入layer的弹窗插件，温馨提示：该插件是基于jQuery的基础之上，需在jQuery之后引入，正确的引入顺序为：
+	先引入jQuery，在引入基于jQuery的插件，最后引入自己书写的js
+	-->
+	<script type="text/javascript" src="js/demo.js"></script>
 </head>
 <body>
-    yanghaiwei
+	<div id="header">
+		<div id="head-left">
+			<div id="box1" onclick="Danji()">
+			    <span id="span1">网站导航 ▽</span>
+				    <ul id="ul1">
+						<li><a href="">苏宁互联</a></li>
+						<li><a href="">苏宁卡券</a></li>
+						<li><a href="">大众优惠</a></li>
+						<li><a href="">苏宁达人</a></li>
+					</ul>
+			</div>
+			<div id="box2" onclick="Danji1()">
+			    <span id="span2">商家入驻 ▽</span>
+				    <ul id="ul2">
+						<li><a href="">合作招商</a></li>
+						<li><a href="">金融中心</a></li>
+						<li><a href="">培训中心</a></li>
+						<li><a href="">规则中心</a></li>
+						<li><a href="">商家论坛</a></li>
+						<li><a href="">服务市场</a></li>
+						<li><a href="">增值服务</a></li>
+					</ul>
+			</div>
+			<div id="box3" onclick="Danji2()">
+			    <span id="span3">客户服务 ▽</span>
+				<ul id="ul3">
+						<li><a href="">苏宁帮客</a></li>
+						<li><a href="">查找门店</a></li>
+						<li><a href="">建议反馈</a></li>
+						<li><a href="">帮助中心</a></li>
+						<li><a href="">在线服务</a></li>
+			    </ul>
+			</div>
+		</div>
+		<div id="head-right">
+			<ul class="ul2">
+				<li><a href="" id="li1" onclick="Zhuce(); return false">账号注册</a></li>
+				<li><a href="" id="li2" onclick="Login(); return false">账号登录</a></li>
+				<li><a href="">注册有礼</a></li>
+				<li><a href="">我的订单</a></li>
+				<li><a href="">我的易购</a></li>
+				<li><a href="">苏宁会员</a></li>
+				<li><a href="">企业采购</a></li>
+				<li><a href="">手机苏宁</a></li>
+		    </ul> 
+		</div>
+		<div id="d1"><!--账号登录层-->
+			<div class="login-item"><input type="text" id="txtUserName" placeholder="手机/邮箱/用户名"></div>
+			<div class="login-item"><input type="password" id="txtPwd" placeholder="密码"></div>
+			<div class="login-item1"><input type="checkbox">下次自动登录</div>
+			<div class="login-item"><a href="">登 &nbsp;&nbsp;录</a></div>
+			<div class="login-item2">
+				<span class="span1"><a href="">忘记密码?</a></span>
+				<span class="span2"><a href="">其他登录方式</a></span>
+			</div>
+	    </div>
+	    <div class="clear"></div>
+	    <!--账号注册层-->
+		<div id="d2">
+			<span class="zhuce-item">用户名:<input type="text" placeholder="请输入用户名"></input></span>
+			<span class="zhuce-item">密  &nbsp;&nbsp;&nbsp;码:<input type="password" placeholder="请设置密码"></input></span >
+			<span class="zhuce-item">手机号:<input type="text" placeholder="请填写手机号"></input></span>
+			<span class="zhuce-item1">
+				验证码:<input type="text" id="yzm"></input>
+				<input type="button" value="获取验证码" id="hyzm">
+			</span></br>
+			<span class="zhuce-item2">
+			   <input type="checkbox"><a href="">《苏宁易购会员章程》</a><a href="">《支付宝协议》</a><a href="">《苏宁广告协议》</a>
+			</span>
+			<span class="zhuce-item"><a href="" id="a1">提交注册</a></span>
+		</div>
+	</div>
+	<div id="content">
+		<div id="content-top-left"><img src="images/q.png" ></div>
+		<div id="content-top-right">
+			<div class="ctr-l">
+				<span class="ctr-sp1">
+					<input type="text" class="ctr-input" placeholder="请输入商品名称">
+					<span class="ctr-input-sp"><a href="https://www.baidu.com/index.php?tn=monline_3_dg"><b>搜&nbsp;索</b></a></span>
+				</span>
+				<span class="ctr-sp2">
+					<ul>
+						<li><a href="">空调</a></li>
+						<li><a href="">|</a></li>
+						<li><a href="">大牌钟表饰品</a></li>
+						<li><a href="">|</a></li>
+						<li><a href="">电风扇</a></li>
+						<li><a href="">|</a></li>
+						<li><a href="">海信直降千元</a></li>
+						<li><a href="">|</a></li>
+						<li><a href="">美的超频日</a></li>
+						<li><a href="">|</a></li>
+						<li><a href="">抽纸</a></li>
+						<li><a href="">|</a></li>
+						<li><a href="">行车记录仪</a></li>
+					</ul>
+				</span>
+			</div>
+			<div class="ctr-r"><img src="images/w.png" ></div>
+		</div>
+		<div id="content-center">
+			<div class="content-top">
+				<div class="ct-dv1"><b>全部商品分类</b></div>
+				<div class="ct-dv2">
+					<ul>
+						<li><b><a href="">大聚惠</a></b></li>
+						<li><a href=""><b>红孩子</b></a></li>
+						<li><a href=""><b>苏宁超市</b></a></li>
+						<li><a href=""><b>电器城</b></a></li>
+						<li><a href=""><b>生活家电</b></a></li>
+						<li><a href=""><b>时尚服饰</b></a></li>
+						<li><a href=""><b>海外购</b></a></li>
+						<li><a href=""><b>特卖</b></a></li>
+						<li><a href=""><b>苏宁金融</b></a></li>
+				    </ul>
+				</div>
+				<div class="ct-dv3"></div>
+			</div>
+			<div class="center-ct-one">
+				<ul id="cct-ul">
+					<li>
+						<span id="cct-span"><img src="images/qq.png" ></span>&nbsp;
+						<span id="cct-s"><a href="">手机 | 运营商 | 智能数码</a></span>
+					</li>
+					<li>
+						<span id="cct-span"><img src="images/ww.png" ></span>&nbsp;
+						<span id="cct-s"><a href="">空调 | 电视 | 洗衣机</a></span>
+					</li>
+					<li>
+						<span id="cct-span"><img src="images/ee.png" ></span>&nbsp;
+						<span id="cct-s"><a href="">厨卫打点 | 生活家电 | 厨具</a></span>
+					</li>
+					<li>
+						<span id="cct-span"><img src="images/rr.png" ></span>&nbsp;
+						<span id="cct-s"><a href="">电脑 | 办公相机 | DIY</a></span>
+					</li>
+					<li>
+						<span id="cct-span"><img src="images/tt.png" ></span>&nbsp;
+						<span id="cct-s"><a href="">家居 | 家具 | 家纺</a></span>
+					</li>
+					<li>
+						<span id="cct-span"><img src="images/yy.png" ></span>&nbsp;
+						<span id="cct-s"><a href="">食品 | 酒水 | 生产</a></span>
+					</li>
+					<li>
+						<span id="cct-span"><img src="images/uu.png" ></span>&nbsp;
+						<span id="cct-s"><a href="">个护化妆 | 纸品清洁 | 宠物</a></span>
+					</li>
+					<li>
+						<span id="cct-span"><img src="images/ii.png" ></span>&nbsp;
+						<span id="cct-s"><a href="">母婴 | 玩具 | 童装</a></span>
+					</li>
+					<li>
+						<span id="cct-span"><img src="images/oo.png" ></span>&nbsp;
+						<span id="cct-s"><a href="">运动 | 户外 | 骑行</a></span>
+					</li>
+					<li>
+						<span id="cct-span"><img src="images/pp.png" ></span>&nbsp;
+						<span id="cct-s"><a href="">男装 | 女装 | 内衣</a></span>
+					</li>
+					<li>
+						<span id="cct-span"><img src="images/aa.png" ></span>&nbsp;
+						<span id="cct-s"><a href="">箱包 | 钟表 | 珠宝</a></span>
+					</li>
+					<li>
+						<span id="cct-span"><img src="images/ss.png" ></span>&nbsp;
+						<span id="cct-s"><a href="">汽车 | 摩托车 | 汽车用品</a></span>
+					</li>
+					<li>
+						<span id="cct-span"><img src="images/dd.png" ></span>&nbsp;
+						<span id="cct-s"><a href="">图书 | 童书 | 电子书</a></span>
+					</li>
+					<li>
+						<span id="cct-span"><img src="images/ff.png" ></span>&nbsp;
+						<span id="cct-s"><a href="">理财 | 分期 | 保险</a></span>
+					</li>
+				</ul>
+			</div>
+			<div id="center-ct-two" onclick="LunboT()"><!--  -->
+				<ul>
+			        <li><img src="images/q.jpg"></li>
+			        <li><img src="images/w.jpg"></li>
+			        <li><img src="images/e.jpg"></li>
+			        <li><img src="images/r.jpg"></li>
+			        <li><img src="images/t.jpg"></li>
+			        <li><img src="images/y.jpg"></li>
+			        <li><img src="images/u.jpg"></li>
+               </ul>
+			</div>
+			<div class="center-ct-three">
+				<div id="ct-top" onclick="LunboT1()">
+					<ul>
+				        <li><img src="images/i.png"></li>
+				        <li><img src="images/o.jpg"></li>
+				        <li><img src="images/p.png"></li>
+				        <li><img src="images/a.png"></li>
+				        <li><img src="images/s.jpg"></li>
+				        <li><img src="images/d.png"></li>
+				        <li><img src="images/f.jpg"></li>
+               		</ul>
+				</div>
+				<div id="ct-bottom" onclick="LunboT2()">
+					<ul>
+				        <li><img src="images/f.jpg"></li>
+				        <li><img src="images/d.png"></li>
+				        <li><img src="images/s.jpg"></li>
+				        <li><img src="images/p.png"></li>
+				        <li><img src="images/a.png"></li>
+				        <li><img src="images/i.png"></li>
+				        <li><img src="images/o.jpg"></li>
+	               </ul>
+				</div>
+			</div>
+			<div class="center-ct-four"><img src="images/gg.png" alt=""></div>
+		</div>
+		<div id="Content-C">
+			<div id="content-one">
+				<div class="co-1">
+					<span class="co-1-s"><img src="images/hh.png" ></span>
+					<span class="co-1-p">更多惠聚好货</span>
+				</div>
+				<div class="co-2">
+					<div class="co-t">
+						<span class="ct-1"><img src="images/zz.png" ></span>
+						<span class="ct-2">
+							<a href=""><b>王老吉凉茶植物饮料王老吉310ml*12罐怕上火喝王老吉</b></a>
+							<p class="p1"><b>&yen;&nbsp;39.90</b></p>
+						</span>
+					</div>
+					<div class="co-t">
+						<span class="ct-1"><img src="images/xx.png" ></span>
+						<span class="ct-2">
+							<a href=""><b>健力宝 运动饮料橙蜜味560ml*15箱装 (新老包装 随机发货)</b></a>
+							<p class="p1"><b>&yen;&nbsp;39.90</b></p>
+						</span>
+					</div>
+					<div class="co-t">
+						<span class="ct-1"><img src="images/cc.png" ></span>
+						<span class="ct-2">
+							<a href=""><b>兰思诺(Lansinoh )母乳保鲜储存袋 一次性存奶袋180ml(100片装)</b></a>
+							<p class="p1"><b>&yen;&nbsp;99.90</b></p>
+						</span>
+					</div>
+					<div class="co-t">
+						<span class="ct-1"><img src="images/vv.png" ></span>
+						<span class="ct-2">
+							<a href=""><b>农夫山泉天然饮用水4L*6整箱 家庭用水桶装</b></a>
+							<p class="p1"><b>&yen;&nbsp;41.90</b></p>
+						</span>
+					</div>
+					<div class="co-t">
+						<span class="ct-1"><img src="images/bb.png" ></span>
+					    <span class="ct-2">
+							<a href=""><b>汰渍(Tide)全效360°洗衣液洁雅百合香型洗衣液3kgx2瓶 宝洁出品</b></a>
+							<p class="p1"><b>&yen;&nbsp;59.90</b></p>
+						</span>
+					</div>
+					<div class="co-t">
+						<span class="ct-1"><img src="images/nn.png" ></span>
+						<span class="ct-2">
+							<a href=""><b>蒙牛MENGNIU 特仑苏纯牛奶利乐苗条装 250ml*16 盒装 </b></a>
+							<p class="p1"><b>&yen;&nbsp;68.90</b></p>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div id="content-two">
+				<div id="content-two-1">
+				    <div class="ct-s">
+				    	<span class="ct-s-1"><b>好 货</b></span><span class="ct-s-2">更多好货></span>
+				    </div>
+					<div class="ct1-1">
+						<span class="ct1-1-1">可爱多婴儿<p class="p11">手口湿巾</p><p></p>
+							<p class="p12">422人说好</p>
+						</span>
+						<span class="ct1-1-2"><img src="images/qqq.png" alt=""></span>
+					</div>
+					<div class="ct1-2">
+						<span class="ct1-2-1">Aqara智能<p class="p11">防盗电子锁</p><p></p>
+							<p class="p12">312人说好</p></span>
+							<span class="ct1-2-2"><img src="images/www.png" alt=""></span>
+					</div>
+					<div class="ct1-3">
+						<span class="ct1-3-1">美的5.5KG<p class="p11">波轮洗衣机</p><p></p>
+							<p class="p12">326人说好</p></span>
+						<span class="ct1-3-2"><img src="images/eee.png" alt=""></span>
+					</div>
+					<div class="ct1-4">
+						<span class="ct1-4-1">飞利浦声波<p class="p11">震动牙刷</p><p></p>
+							<p class="p12">323人说好</p></span>
+						<span class="ct1-4-2"><img src="images/rrr.png" alt=""></span>
+					</div>
+					<div class="ct1-5">
+						<span class="ct1-5-1">多功能炒菜<p class="p11">机器人</p><p></p>
+							<p class="p12">353人说好</p></span>
+						<span class="ct1-5-2"><img src="images/ttt.png" alt=""></span>
+					</div>
+					<div class="ct1-6">
+						<span class="ct1-6-1">Phoips咖啡<p class="p11">壶</p><p></p>
+							<p class="p12">326人说好</p></span>
+						<span class="ct1-6-2"><img src="images/yyy.png" alt=""></span>
+					</div>
+				</div>
+				<div id="content-two-2">
+					<div class="ct-2-1">
+					   <span class="ct-s-1"><b>特色推荐</b></span><span class="ct-s-2">更多推荐></span>
+					</div>
+					<div class="ct-2-2">
+						<div class="ch-1">
+							<div class="ch-1-1">半夜饿了咋整</div>
+							<p class="p21">让我来拯救饿货吧</p>
+						</div>
+						<div class="ch-2"><img src="images/uuu.png" alt=""></div>
+					</div>
+					<div class="ct-2-3">
+						<div class="ch-1">
+							<div class="ch-1-1">厨房管理员</div>
+							<p class="p21">健康从点滴开始</p>
+						</div>
+						<div class="ch-2"><img src="images/iii.png" alt=""></div>
+					</div>
+					<div class="ct-2-4">
+						<div class="ch-1">
+							<div class="ch-1-1">记录爱留住美</div>
+							<p class="p21">拍出我们的幸福生活</p>
+						</div>
+						<div class="ch-2"><img src="images/ooo.png" alt=""></div>
+					</div>
+					<div class="ct-2-5">
+						<div class="ch-1">
+							<div class="ch-1-1">想不运动都难</div>
+							<p class="p21">跑酷or健身，都要穿着美美</p>
+						</div>
+						<div class="ch-2"><img src="images/ppp.png" alt=""></div>
+					</div>
+				</div>
+				<div id="content-two-3">
+					<div class="ct-3-1">
+					   <span class="ct-s-1"><b>排行榜</b></span><span class="ct-s-2">精品向标></span>
+					</div>
+					<div class="ct-3-2"><img src="images/aaa.png" alt=""></div>
+					<div class="ct-3-2"><img src="images/sss.png" alt=""></div>
+				</div>
+			</div>
+			<div id="content-three">
+				<div id="content-three-1">
+					<div class="cth-1">
+					   <span class="ct-s-1"><b>大牌特卖</b></span><span class="ct-s-2">更多特卖></span>
+					</div>
+					<div class="cth-2">
+						<div class="cth-2-1">
+							<span class="cth21-1">特续周年庆<p class="pc1">正品大牌满400-600</p></span>
+							<span class="cth21-2"><img src="images/ddd.png" alt=""></span>
+						</div>
+						<div class="cth-2-2">
+							<span class="cth22-1"><img src="images/hhh.png" alt=""></span>
+							<span class="cth22-2"><img src="images/jjj.png" alt=""></span>
+						</div>
+					</div>
+					<div class="cth-3">
+						<div class="cth-3-1">
+							<span class="cth31-1">阿迪达斯<p>炫彩一夏</p>
+								<p class="pc31">满200-400</p></span>
+							<span class="cth31-2"><img src="images/ccc.png" alt=""></span>
+						</div>
+						<div class="cth-3-2">
+							<span class="cth32-1">潘多拉<p>饰品专场</p>
+								<p class="pc31">满400-200</p></span>
+							<span class="cth32-2"><img src="images/vvv.png" alt=""></span>
+						</div>
+					</div>
+				</div>
+				<div id="content-three-2">
+					<div class="cth-4">
+						<span class="ct-s-1"><b>海外购</b></span><span class="ct-s-2">更多海购></span>
+					</div>
+					<div class="cth-2">
+						<div class="cth-2-1">
+							<span class="cth21-1">放心海外购<p class="pc2">正品好货海外直邮</p></span>
+							<span class="cth21-2"><img src="images/fff.png" alt=""></span>
+						</div>
+						<div class="cth-2-2">
+							<span class="cth22-1"><img src="images/kkk.png" alt=""></span>
+							<span class="cth22-2"><img src="images/lll.png" alt=""></span>
+						</div>
+					</div>
+					<div class="cth-3">
+						<div class="cth-3-1">
+							<span class="cth31-1">厨房帮手<p>清洁神器</p>
+								<p class="pc32">两件5折</p></span>
+							<span class="cth31-2"><img src="images/bbb.png" alt=""></span>
+						</div>
+						<div class="cth-3-2">
+							<span class="cth32-1">Swise大牌<p>超级巨献</p>
+								<p class="pc32">满100减50</p>
+							</span>
+							<span class="cth32-2"><img src="images/nnn.png" alt=""></span>
+						</div>
+					</div>
+				</div>
+				<div id="content-three-3">
+					<div class="cth-5">
+					   <span class="ct-s-1"><b>生活家电</b></span><span class="ct-s-2">更多家电></span>
+					</div>
+					<div class="cth-2">
+						<div class="cth-2-1">
+							<span class="cth21-1">秒杀低至6.1元<p class="pc3">一件9折，两件8.8折</p></span>
+							<span class="cth21-2"><img src="images/ggg.png" alt=""></span>
+						</div>
+						<div class="cth-2-2">
+							<span class="cth22-1"><img src="images/zzz.png" alt=""></span>
+							<span class="cth22-2"><img src="images/xxx.png" alt=""></span>
+						</div>
+					</div>
+					<div class="cth-3">
+						<div class="cth-3-1">
+							<span class="cth31-1">有爱才居家<p>初夏放价</p>
+								<p class="pc3">每满99减30</p>
+							</span>
+							<span class="cth31-2"><img src="images/mmm.png" alt=""></span>
+						</div>
+						<div class="cth-3-2">
+							<span class="cth32-1">品质家电<p>嗨购不停</p>
+								<p class="pc3">低至9.9元</p>
+							</span>
+							<span class="cth32-2"><img src="images/z1.png" alt=""></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="content-four">
+				<div id="content-four-1">
+					<div id="content-four-1-1">
+						<div id="content-four-1-1-1">
+							<span id="content-four-1-1-1-1">
+								<div class="ss">苏宁生鲜</div>
+								<div class="ssp">满158减30元</div>
+							</span>
+							<span id="content-four-1-1-1-2"><img src="images/q2.png" alt=""></span>
+						</div>
+						<div id="content-four-1-1-2">
+							<span id="content-four-1-1-2-1">
+								<div class="ss">智能生活</div>
+								<div class="ssp">289元抢购小BIU</div>
+							</span>
+							<span id="content-four-1-1-2-2"><img src="images/q1.png" alt=""></span>
+						</div>
+					</div>
+					<div id="content-four-1-2">
+						<div id="content-four-1-2-1">
+							<span id="content-four-1-2-1-1">
+								<div class="ss">企业采购节</div>
+								<div class="ssp">企业价7折起</div>
+							</span>
+							<span id="content-four-1-2-1-2"><img src="images/q3.png" alt=""></span>
+						</div>
+						<div id="content-four-1-2-2">
+							<span id="content-four-1-2-2-1">
+								<div class="ss">苏宁金融</div>
+								<div class="ssp">积分翻倍抽Inphone8</div>
+							</span>
+							<span id="content-four-1-2-2-2"><img src="images/q4.png" alt=""></span>
+						</div>
+					</div>
+					<div id="content-four-1-3">
+						<div id="content-four-1-3-1"><img src="images/q5.png" alt=""></div>
+						<div id="content-four-1-3-2">
+							<span id="content-four-1-3-2-1"><img src="images/q6.png" alt=""></span>
+							<span id="content-four-1-3-2-2"><img src="images/q7.png" alt=""></span>
+							<span id="content-four-1-3-2-3"><img src="images/q8.png" alt=""></span>
+						</div>
+					</div>
+				</div>
+				<div id="content-four-2">
+					<div id="content-four-2-1">
+						<span id="content-four-2-1-1">
+							<div class="ss">二手优品</div>
+							<div class="ssp">限量抢购200元神券</div>
+						</span>
+						<span id="content-four-2-1-2"><img src="images/aa1.png" alt=""></span>
+					</div>
+					<div id="content-four-2-2">
+						<span id="content-four-2-2-1">
+							<div class="ss">领券中心</div>
+							<div class="ssp">抢神券类61.1元</div>
+						</span>
+						<span id="content-four-2-2-2"><img src="images/aa2.png" alt=""></span>
+					</div>
+					<div id="content-four-2-3">
+						<div id="content-four-2-3-1">
+							<div class="content-four-2-3-1-1">中华特色馆</div>
+							<div class="content-four-2-3-1-2"><img src="images/aa3.png" alt=""></div>
+						</div>
+						<div id="content-four-2-3-2">
+							<div class="content-four-2-3-1-1">苏宁金融</div>
+							<div class="content-four-2-3-1-2"><img src="images/aa4.png" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+	<div id="bottom">
+		<div id="bottom-1">
+			<div id="bottom_1">
+				<div id="bottom_1_1">
+					<div id="bottom-1-1" onclick="Xwc()">趣味咨询</div>
+				</div>
+			</div>
+		</div>
+		<div id="bottom-2">
+			<div class="bottom-2-1">前</div>
+			<div class="bottom-2-1">程</div>
+			<div class="bottom-2-1">似</div>
+			<div class="bottom-2-2">锦</div>
+		</div>
+		<div id="bottom-3">
+			<div id="bottom_3">
+				<div id="bottom_3_1">
+					<div id="bottom-3-1" onclick="Tsc()">作者详情</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
 </body>
 </html>
+

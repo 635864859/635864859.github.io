@@ -1,0 +1,133 @@
+*{margin:0px;padding:0px;}
+a{text-decoration:none;font-family:"黑体";color:white;}
+#header{width:1349px;height:42px;background-color:#F5F5F5;margin:0px auto;}
+#clear{clear: both;}
+ .ul1 li{float:left;height:42px;line-height:42px;margin:0px 20px 5px 20px;list-style:none;font-family:微软雅黑;font-size:12px;}
+ .ul1 li a{text-decoration:none;color:#666666;}
+ .ul1 li a:hover{text-decoration:underline;color:red;}
+ .ul2 li{float:left;height:42px;line-height:42px;margin:0px 20px 5px 5px;list-style:none;font-family:微软雅黑;font-size:12px;}
+ .ul2 li a{text-decoration:none;color:#666666;}
+ .ul2 li a:hover{text-decoration:underline;color:red;}
+.ul2{float:right;}
+#d1{width:360px;height:280px; display:none;margin:0px auto;}
+.login-item input{width:300px;height:35px;margin:10px 20px;}
+.login-item  a{width:302px;height:40px;background-color:red;display:block;line-height:40px;text-align:center;color:white;font-size:30px;margin:0px 20px;}
+.login-item{margin-top:1px;margin-left:10px;}
+.login-item1{color:#666666;margin:10px 30px;}
+.login-item2{margin:10px 30px;}
+.login-item2 a{color:#666666;}
+.login-item2 a:hover{text-decoration:underline; color:blue;}
+.zhuce-item{display:block;margin:5px 30px;}
+.zhuce-item input{height:30px;width:251px;margin-top:5px ;}
+.zhuce-item1{display:block;margin:0 30px;}
+.zhuce-item2{display:block;margin:0 30px;width:338px;}
+.zhuce-item1 input{height:30px;width:125px;margin-top:5px;}
+.zhuce-item2 a{font-size:12px;color:#666666;}
+.zhuce-item2 a:hover{text-decoration:underline;color:#FF6600;}
+.span2{float:right;}
+.zhuce-item  a{width:310px;height:40px;background-color:red;display:block;line-height:40px;text-align:center;color:white;font-size:30px;margin-top:5px;}
+#d2{height:300px;width:368.44165px;display:none;}
+#bottom{width:1300px;height:150px;margin:0px auto;text-align:center;margin-bottom:50px;}
+#bottom-1{width:150px;height:150px;float:left;background-color:#FF9F00;border-top-left-radius:40%;border-bottom-left-radius:40%;}
+#bottom-1-1{cursor:pointer;font-size:13px;background-color:#D14C92;width:70px;height:70px;color:white;margin:20px 10px 10px 25px;border-radius:50%;line-height:70px;}
+#bottom-2{width:991px;height:150px;float:left;background-color:#FED133;}
+.bottom-2-1{
+	height:100px;
+	width:100px;
+	border-radius:50%;
+	float:left;
+	background:#D14C92;
+	margin:30px 150px 10px 30px;
+	line-height:100px;
+	font-family:"华文行楷";
+	color:black;
+	font-size:55px;
+	transition:all 1000ms linear;
+	-moz-transition: all 1000ms linear;
+	-webkit-transition: all 1000ms linear;
+	-ms-transition: all 1000ms linear;
+}
+.bottom-2-1:hover{
+	transform: rotate(360deg);
+	-moz-transform:  rotate(360deg);
+	-webkit-transform:  rotate(360deg);
+	-ms-transform:  rotate(360deg);
+}
+.bottom-2-2{
+	height:100px;
+	width:100px;
+	border-radius:50%;
+	float:left;
+	background:#D14C92;
+	margin:30px 5px 10px 20px;
+	line-height:100px;
+	font-family:"华文行楷";
+	color:black;
+	font-size:55px;
+	transition:all 1000ms linear;
+	-moz-transition: all 1000ms linear;
+	-webkit-transition: all 1000ms linear;
+	-ms-transition: all 1000ms linear;
+}
+.bottom-2-2:hover{
+	transform: rotate(360deg);
+	-moz-transform:  rotate(360deg);
+	-webkit-transform:  rotate(360deg);
+	-ms-transform:  rotate(360deg);
+}
+#bottom-3{
+	width:150px;
+	height:150px;
+	float:left;
+	background-color:#FF9F00;
+	border-top-right-radius:40%;
+	border-bottom-right-radius:40%;
+}
+#bottom-3-1{
+	cursor:pointer;
+	background-color:#36BFA9;
+	font-size:13px;
+	background-color:#D14C92;
+	width:70px;
+	height:70px;
+	color:white;
+	margin:20px 10px 10px 15px;
+	border-radius:50%;
+	line-height:70px;
+}
+#bottom_1{
+	width:130px;
+	height:130px;
+	border-top-left-radius:40%;
+	border-bottom-left-radius:40%;
+	background-color:#D14C92;
+	margin:10px 15px 10px 10px;
+	border:2px solid white;
+}
+#bottom_1_1{
+	width:110px;
+	height:110px;
+	border-top-left-radius:40%;
+	border-bottom-left-radius:40%;
+	background-color:#36BFA9;
+	margin:10px 15px 10px 10px;
+	border:2px solid white;
+}
+#bottom_3{
+	width:130px;
+	height:130px;
+	border-top-right-radius:40%;
+	border-bottom-right-radius:40%;
+	background-color:#D14C92;
+	margin:10px 15px 10px 10px;
+	border:2px solid white;
+}
+#bottom_3_1{
+	width:110px;
+	height:110px;
+	border-top-right-radius:40%;
+	border-bottom-right-radius:40%;
+	background-color:#36BFA9;
+	margin:10px 15px 10px 10px;
+	border:2px solid white;
+}

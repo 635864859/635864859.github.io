@@ -1,0 +1,26 @@
+ul{padding:0px;margin:0px;}
+    /*网站导航  样式部分开始  cursor:pointer;设置鼠标移动到上面的形状*/
+#box1{width:102px;height:106px;margin-top:10px;float:left;margin-left:5px;cursor:pointer;position:relative;}
+#span1{display:block;height:20px;width:102px;text-align:center;color:#666666;font-size:12px;}
+#ul1{text-align:center;line-height:20px;display:none;background:#848d96;}
+#ul1 li{list-style:none;font-size:14px;height:20px;width:100px;margin-top:3px;}
+#ul1 li:hover{background:black;color:white;}
+#ul1 li a:hover{color:#FF8800;}
+   /*商家入驻  样式部分开始*/
+#box2{width:102px;height:106px;margin-top:10px;float:left;margin-left:5px;cursor: pointer;position:relative;}
+#span2{display:block;height:20px;width:102px;color:#666666;text-align:center;font-size:12px;}
+#ul2{text-align:center;line-height:20px;display:none;background:#848d96;}
+#ul2 li{list-style:none;font-size:14px;height:20px;width:100px;margin-top:3px;}
+#ul2 li:hover{background:black;color:white;}
+#ul2 li a:hover{color:#FF8800;}
+	/*客户服务  样式部分开始*/
+#box3{width:102px;height:106px;margin-top:10px;float:left;margin-left:5px;cursor: pointer;position:relative;}
+#span3{display:block;height:20px;width:102px;color:#666666;text-align:center;font-size:12px;}
+#ul3{text-align:center;line-height:20px;display:none;background:#848d96;}
+#ul3 li{list-style:none;font-size:14px;height:20px;width:100px;margin-top:3px;}
+#ul3 li:hover{background:black;color:white;}
+#ul3 li a:hover{color:#FF8800;}
+/*头部左侧样式部分*/
+#head-left{width:500px;height:42px;float:left;}
+/*头部右侧样式部分*/
+#head-right{width:800px;height:42px;float:left;}
